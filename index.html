@@ -24,6 +24,16 @@
 
 <style> 
 
+@keyframes slide {
+    from{
+        left:-200px;
+    opacity: 0;
+    }
+    to{
+     left: 650px;
+     opacity: 1;
+    }
+}
 
 @font-face {
     font-family: 'GangwonEduSaeeum_OTFMediumA';
@@ -86,6 +96,7 @@ margin-left: 70px;
 margin-bottom: 500px;
 }
 .Name1 {
+   
    /* class 호출은 .를 사용 */
    text-decoration-line: none;
 white-space: nowrap;
@@ -98,6 +109,7 @@ text-overflow:ellipsis;
     padding: 50px;
 }
 .bbcc{
+   
     margin-bottom: -20;
     font-family:"GangwonEduSaeeum_OTFMediumA";
     border-radius: 8px / 10px;
@@ -112,14 +124,17 @@ overflow:hidden;
 text-overflow:ellipsis;
 }
 .hflink{
-  
+ 
     border-radius: 8px / 10px;
 text-align: center;
 justify-content: center;
 background: linear-gradient(to right top, #e0deeebb,#ffffff);
 color: transparent;
--webkit-background-clip:border-box
-
+-webkit-background-clip:border-box;
+position: absolute;
+left:650px;
+top:200px;
+animation: slide 3s ease-out;
 }
 .BBbbdd{
 vertical-align:sub;
@@ -137,7 +152,7 @@ transform: translate(-700px);
 
 .boxx{
     font-family:"GangwonEduSaeeum_OTFMediumA";
-    border-top: 5px solid gray;
+   
     border-bottom: 5px solid black;
     padding: 10px;
 
@@ -164,8 +179,19 @@ color: black;
 </ol>
 
 </p>
+
+<p>
+
+   
+</p>
+
 </div>
-</a></h1>
+
+</a>
+
+
+</h1>
+
 </h4>
 
 <!--Start of Tawk.to Script
